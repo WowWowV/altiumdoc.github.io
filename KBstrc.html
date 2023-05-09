@@ -1,0 +1,442 @@
+<div class="content">
+  <div id="jquery-accordion-menu" class="jquery-accordion-menu red">
+    <div class="jquery-accordion-menu-header" id="form">Altium中国知识库</div>
+    <ul id="demo-list">
+      <!-- Altium Designe Catalog-->
+      <li>
+        <a href="#"><i class="fa fa-cog"></i>Altium Designer</a>
+        <ul class="submenu">
+          <li>
+            <a href="#">Atiumlive账户</a>
+          </li>
+          <li><a href="#">软件安装和License许可管理</a></li>
+          <li><a href="#">用户界面和平台</a></li>
+          <li><a href="#">数据管理</a></li>
+          <li><a href="#">元器件和元器件库</a></li>
+          <li><a href="#">原理图</a></li>
+          <li><a href="#">PCB</a></li>
+          <li><a href="#">机电协同</a></li>
+          <li><a href="#">Multi-board多板工程设计</a></li>
+          <li><a href="#">Draftsman</a></li>
+          <li><a href="#">仿真分析</a></li>
+          <li><a href="#">生产制造</a></li>
+          <li><a href="#">性能表现或意外报错</a></li>
+          <li><a href="#">导入与导出</a></li>
+          <li><a href="#">Camtasic</a></li>
+          <li><a href="#">其它</a></li>
+        </ul>
+      </li>
+      <!-- Altium 365 Catalog-->
+      <li>
+        <a href="#"><i class="fa fa-cog"></i>Altium 365</a>
+        <ul class="submenu">
+          <li><a href="#">平台界面</a></li>
+          <li>
+            <a href="#">设计管理</a>
+            <ul class="submenu">
+              <li><a href="#">如何重命名托管项目，以及在导出本地副本后，将会发生什么情况？</a></li>
+              <li><a href="#">如何在Altium 365中控制生命周期转换权限？</a></li>
+              <li><a href="#">Altium 365 Pro中的托管项目组织</a></li>
+              <li><a href="#">是否可以在Altium 365中删除发布的版本并重做该过程，以便我们可以保留相同版本编号？</a></li>
+              <li><a href="#">从Altium 365 工作区中软删除条目</a></li>
+              <li><a href="#">通过工作区共享项目</a></li>
+              <li><a href="#">Altium 365数据清理</a></li>
+              <li><a href="#">在未邀请加入Workspace的情况下，与组织外部成员共享项目</a></li>
+              <li><a href="#">将项目重新添加到Altium 365工作区</a></li>
+              <li><a href="#">如何启用已上传Altium 365项目的VCS</a></li>
+              <li><a href="#">如何更改项目发布的版本命名方案</a></li>
+              <li><a href="#">更改托管项目的文件夹路径位置</a></li>
+            </ul>
+          </li>     
+          <li>
+            <a href="#">元器件</a>
+            <ul class="submenu">
+              <li><a href="#">Altium 365的库导入器</a></li>
+              <li><a href="#">具有相同图形符号的不同元件的库迁移</a></li>
+              <li><a href="#">编辑Altium 365中的元件</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">配置</a>
+            <ul class="submenu">
+              <li><a href="#">更换Altium 365工作区拥有者</a></li>
+              <li><a href="#">拥有一个以上工作区</a></li>
+              <li><a href="#">如何删除Altium 365 Workspace</a></li>
+              <li><a href="#">重新命名Altium 365工作区</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">性能表现或意外报错</a>
+            <ul class="submenu">
+              <li><a href="#">Altium 365 工作区错误——您并未有Altium Designer的有效订阅</a></li>
+              <li><a href="#">工作过程中与Altium 365失去连接</a></li>
+              <li><a href="#">Altium 365网络查看器界面中的图形支持</a></li>
+            </ul>
+          </li>
+          <li><a href="#">云平台安全</a></li>
+        </ul>
+      </li>
+  </div>
+</div>
+<style>
+  @font-face {
+    font-family: "FontAwesome2";
+    src: url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff")
+        format("woff"),
+      url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2")
+        format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .fa {
+    display: inline-block;
+    font-family: FontAwesome2 !important;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #f0f0f0;
+  }
+
+  .content {
+    width: 260px;
+    margin: 20px auto;
+  }
+
+  #demo-list a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .jquery-accordion-menu,
+  .jquery-accordion-menu * {
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    outline: 0;
+  }
+
+  .jquery-accordion-menu {
+    min-width: 260px;
+    float: left;
+    position: relative;
+    box-shadow: 0 20px 50px #333;
+  }
+
+  .jquery-accordion-menu .jquery-accordion-menu-footer,
+  .jquery-accordion-menu .jquery-accordion-menu-header {
+    width: 100%;
+    height: 50px;
+    padding-left: 22px;
+    float: left;
+    line-height: 50px;
+    font-weight: 600;
+    color: #f0f0f0;
+    background: #414956;
+  }
+
+  .jquery-accordion-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .jquery-accordion-menu ul li {
+    width: 100%;
+    display: block;
+    float: left;
+    position: relative;
+  }
+
+  .jquery-accordion-menu ul li a {
+    width: 100%;
+    padding: 14px 22px;
+    float: left;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 13px;
+    background: #414956;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.2s linear, background 0.2s linear;
+  }
+
+  .jquery-accordion-menu > ul > li.active,
+  .jquery-accordion-menu > ul > li:hover > a {
+    color: #fff;
+    background: #3b424d;
+  }
+
+  .jquery-accordion-menu > ul > li > a {
+    border-bottom: solid 1px #3b424d;
+  }
+
+  .jquery-accordion-menu ul li a i {
+    width: 34px;
+    float: left;
+    line-height: 18px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .jquery-accordion-menu .submenu-indicator {
+    float: right;
+    right: 22px;
+    position: absolute;
+    line-height: 19px;
+    font-size: 20px;
+    transition: transform 0.3s linear;
+  }
+
+  .jquery-accordion-menu ul ul.submenu .submenu-indicator {
+    line-height: 16px;
+  }
+
+  .jquery-accordion-menu .submenu-indicator-minus > .submenu-indicator {
+    transform: rotate(45deg);
+  }
+
+  .jquery-accordion-menu ul ul.submenu,
+  .jquery-accordion-menu ul ul.submenu li ul.submenu {
+    width: 100%;
+    display: none;
+    position: static;
+  }
+
+  .jquery-accordion-menu ul ul.submenu li {
+    clear: both;
+    width: 100%;
+  }
+
+  .jquery-accordion-menu ul ul.submenu li a {
+    width: 100%;
+    float: left;
+    font-size: 11px;
+    background: #383838;
+    border-top: none;
+    position: relative;
+    border-left: solid 6px transparent;
+    transition: border 0.2s linear;
+  }
+
+  .jquery-accordion-menu ul ul.submenu li:hover > a {
+    border-left-color: #414956;
+  }
+
+  .jquery-accordion-menu ul ul.submenu > li > a {
+    padding-left: 30px;
+  }
+
+  .jquery-accordion-menu ul ul.submenu > li > ul.submenu > li > a {
+    padding-left: 45px;
+  }
+
+  .jquery-accordion-menu
+    ul
+    ul.submenu
+    > li
+    > ul.submenu
+    > li
+    > ul.submenu
+    > li
+    > a {
+    padding-left: 60px;
+  }
+
+  .jquery-accordion-menu ul li .jquery-accordion-menu-label,
+  .jquery-accordion-menu ul ul.submenu li .jquery-accordion-menu-label {
+    min-width: 20px;
+    padding: 1px 2px 1px 1px;
+    position: absolute;
+    right: 18px;
+    top: 14px;
+    font-size: 11px;
+    font-weight: 800;
+    color: #555;
+    text-align: center;
+    line-height: 18px;
+    background: #f0f0f0;
+    border-radius: 100%;
+  }
+
+  .jquery-accordion-menu ul ul.submenu li .jquery-accordion-menu-label {
+    top: 12px;
+  }
+
+  .ink {
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+    transform: scale(0);
+  }
+
+  .animate-ink {
+    animation: ripple 0.5s linear;
+  }
+
+  @keyframes ripple {
+    100% {
+      opacity: 0;
+      transform: scale(2.5);
+    }
+  }
+
+  .red.jquery-accordion-menu .jquery-accordion-menu-footer,
+  .red.jquery-accordion-menu .jquery-accordion-menu-header,
+  .red.jquery-accordion-menu ul li a {
+    background: #3649fa;
+  }
+
+  .red.jquery-accordion-menu > ul > li.active > a,
+  .red.jquery-accordion-menu > ul > li:hover > a {
+    background: #6070ff;
+  }
+
+  .red.jquery-accordion-menu > ul > li > a {
+    border-bottom-color: #6070ff;
+  }
+
+  .red.jquery-accordion-menu ul ul.submenu li:hover > a {
+    border-left-color: #6070ff;
+  }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  (function ($, window, document, undefined) {
+    var pluginName = "jqueryAccordionMenu";
+    var defaults = {
+      speed: 300,
+      showDelay: 0,
+      hideDelay: 0,
+      singleOpen: true,
+      clickEffect: true,
+    };
+
+    function Plugin(element, options) {
+      this.element = element;
+      this.settings = $.extend({}, defaults, options);
+      this._defaults = defaults;
+      this._name = pluginName;
+      this.init();
+    }
+
+    $.extend(Plugin.prototype, {
+      init: function () {
+        this.openSubmenu();
+        this.submenuIndicators();
+        if (defaults.clickEffect) {
+          this.addClickEffect();
+        }
+      },
+      openSubmenu: function () {
+        $(this.element)
+          .children("ul")
+          .find("li")
+          .bind("click touchstart", function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            if ($(this).children(".submenu").length > 0) {
+              if ($(this).children(".submenu").css("display") == "none") {
+                $(this)
+                  .children(".submenu")
+                  .delay(defaults.showDelay)
+                  .slideDown(defaults.speed);
+                $(this)
+                  .children(".submenu")
+                  .siblings("a")
+                  .addClass("submenu-indicator-minus");
+                if (defaults.singleOpen) {
+                  $(this)
+                    .siblings()
+                    .children(".submenu")
+                    .slideUp(defaults.speed);
+                  $(this)
+                    .siblings()
+                    .children(".submenu")
+                    .siblings("a")
+                    .removeClass("submenu-indicator-minus");
+                }
+                return false;
+              } else {
+                $(this)
+                  .children(".submenu")
+                  .delay(defaults.hideDelay)
+                  .slideUp(defaults.speed);
+              }
+
+              if (
+                $(this)
+                  .children(".submenu")
+                  .siblings("a")
+                  .hasClass("submenu-indicator-minus")
+              ) {
+                $(this)
+                  .children(".submenu")
+                  .siblings("a")
+                  .removeClass("submenu-indicator-minus");
+              }
+            }
+            window.location.href = $(this).children("a").attr("href");
+          });
+      },
+      submenuIndicators: function () {
+        if ($(this.element).find(".submenu").length > 0) {
+          $(this.element)
+            .find(".submenu")
+            .siblings("a")
+            .append('<span class="submenu-indicator">+</span>');
+        }
+      },
+      addClickEffect: function () {
+        var ink, d, x, y;
+        $(this.element)
+          .find("a")
+          .bind("click touchstart", function (e) {
+            $(".ink").remove();
+            if ($(this).children(".ink").length === 0) {
+              $(this).prepend('<span class="ink"></span>');
+            }
+            ink = $(this).find(".ink");
+            ink.removeClass("animate-ink");
+            if (!ink.height() && !ink.width()) {
+              d = Math.max($(this).outerWidth(), $(this).outerHeight());
+              ink.css({
+                height: d,
+                width: d,
+              });
+            }
+            x = e.pageX - $(this).offset().left - ink.width() / 2;
+            y = e.pageY - $(this).offset().top - ink.height() / 2;
+            ink
+              .css({
+                top: y + "px",
+                left: x + "px",
+              })
+              .addClass("animate-ink");
+          });
+      },
+    });
+    $.fn[pluginName] = function (options) {
+      this.each(function () {
+        if (!$.data(this, "plugin_" + pluginName)) {
+          $.data(this, "plugin_" + pluginName, new Plugin(this, options));
+        }
+      });
+      return this;
+    };
+  })(jQuery, window, document);
+
+  jQuery("#jquery-accordion-menu").jqueryAccordionMenu();
+</script>
